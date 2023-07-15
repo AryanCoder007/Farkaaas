@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="/>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+     <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header" style="margin: 40px;">Home <span style="color: red;"> / Kezdőlap</span></a>
+                </li>
+                <li>
+                  <a href="#portfolio" style="margin: 40px;">Portfolio </a>
+                </li>
+                <li>
+                  <a href="#about" style="margin: 40px;">About <span style="color: red;"> / Rólam</span></a>
+                </li>
+                <li>
+                  <a href="#hireme" style="margin: 40px;">AllayRPG</a>
+                </li>
+                <button class="btn" onclick="discord()" style="height: 50px; margin-top: 37px; text-align: center; justify-content: center; background:transparent; border-radius: 5%; border-color: blue;"> <i class="fa-brands fa-discord" style="color: white; margin-right: 10px; cursor: pointer;"></i> Join Discord</button>
+
+              </ul>
+              
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-content">
+          <video autoplay muted loop id="myVideo">
+            <source src="img/video.mp4" type="video/mp4">
+          </video>
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Never Give Up <br> <h1 class="header-title" style="margin-top: 10px;">On <span style="color: red;">Your Dreams </span> <br> </h1></h1>
+              <p class="text" style="color: #fff;">
+                Looking for something new? <span style="color: red;">/ Valami újat keresel? </span>  <br>
+                Look around the website! <span style="color: red;">/ Nézz körül a weboldalon! </span>
+
+              </p>
+            </div>
+            <div class="column-2 image">
+              <img src="./img/logo.png" class="img-element z-index" style="width: 75%;" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./img/shapes/square.png" class="shape square" alt="" />
+            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./img/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="My works">Portfolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".builds">Builds</button>
+              <button class="filter-btn" data-filter=".models">Models</button>
+              <button class="filter-btn" data-filter=".texture">
+                Texture Packs
+              </button>
+            </div>
+
+            <div class="grid">
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/allay_backpack.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/bench_blue.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/bench_brown.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/bench_red.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/market_car.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/newspaper rack.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/newspaper_block.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  models">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/models/trash.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Models</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  builds">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/builds/mmorpgdesert.png" style="width: 95%; border-radius: 15%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Builds</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  builds">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/builds/mmorpgisland.png" style="width: 95%; border-radius: 15%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Builds</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  builds">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/builds/mmorpgmap2.png" style="width: 95%; border-radius: 15%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Builds</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/admin.png" alt="" style="width: 90%; height: 50%;" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/allay.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/allaypart.png" style="width: 90%; height: 90%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/AllayRPG-update.png" style="width: 90%; height: 85%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/allayrpg.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/allayrpg_verseny.png" style="width: 90%; height: 80%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/arany.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/default.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/gyemant.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/lobbygui.png" style="width: 70%; height: 80%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/platinum.png" style="width: 90%; height: 50%;" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item  texture">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/Texture packs/quest_book.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Texture Pack</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title whoami" data-title="Who Am I" style="color: white;">About me</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1 hungarian">
+              <h3 class="title-sm" style="color: red;"> Rólam (Hungarian)</h3>
+              <p class="text" style="color: #fff;">
+                Szia, Farkaaas vagyok, simán csak Farkas. Jellemezni magamat csak úgy tudnám, hogy egy lelkes és feltörekvő ember vagyok. Mindig is szerettem megmutatni alkotásaimat, és boldogan nézni azt, ahogy mások örülnek annak, amit nem sikerült maguknak megalkotniuk. Kedves és megértő ember vagyok, aki szívesen segít mindenkinek. <br>
+                <br> <span style="color: red;"> Mivel foglalkozom? </span> Textúrához készítek rajzokat, Minecraft építményeket kreálok, illetve régi és újszerű modelleket alkotok. <br>
+
+               <br> <span style="color: red;"> Miért válassz engem? </span>  Sok embernek segítettem már, és öröm volt látni, hogy boldogok voltak, amikor megkapták azt, amire vágytak. Gyorsan és precízen dolgozom, de ezek mellett mindig a Te érdekeidet fogom szem előtt tartani! 
+              </p>
+  
+                </div>
+                <span>
+                  <div class="column-1 english" style="bottom: 1px; ">
+                    <h3 class="title-sm" style="color: red;">About Me (English) </h3>
+                    <p class="text" style="color: #fff;">
+                      
+Hi, I'm Farkaaas, just a Wolf. The only way I could describe myself is that I am an enthusiastic and up-and-coming person. I have always loved to show off my creations and happily watch others enjoy what they failed to create themselves. I am a kind and understanding person who is happy to help everyone.
+                      <br><br> <span style="color: red;"> What do I do? </span> I make drawings for textures, create Minecraft structures, and create old and new models. <br>
+      
+                     <br> <span style="color: red;"> Why choose me? </span>  I have helped many people and it was a pleasure to see them happy when they got what they wanted. I work quickly and precisely, but I will always keep your interests in mind! 
+                    </p>
+        
+                      </div>
+                </span>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+              <img src="./img/shapes" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme" >
+        <div class="container">
+          <h3 class="title whoami" data-title="What is AllayRPG" style="color: white;">AllayRPG</h3><br> <br>
+          <h2 style="color: yellow; font-size: 26px;" class="title">Hungarian</h2>
+          <br>
+          <p class="text" style="color: #fff;">
+            Az AllayRPG egy magyar, tört minecraft szerver. Elsőként egy MMORPG világának megteremtésében gondolkodtak, de végül úgy döntöttek, hogy nem csak ezt a játékmódot szeretnék megadni a játékosoknak, hanem rengeteg mást is. Magyarországon sok mindent nem igazán sikerült megoldani más szervereknek mint kinézetben illetve játékmódokban, de az AllayRPG törekszik arra, hogy egy szép és modern stílust vegyen fel. Nem pénzkeresés miatt lett létrehozva, hanem egy jó játékélmény és barátságos közösség megalkotásának céljából. Ha felkeltettem vele az érdeklődésedet, csatlakozz hozzánk, hisz örömmel várunk minden lelkes játékost! 
+            <br><br> <span style="color: aqua;"> play.allayrpg.hu : </span>  1.18.2x
+          </p>
+          <br>
+          <br>
+          <h2 style="color: yellow; font-size: 26px;" class="title">English</h2>
+          <br>
+          <p class="text" style="color: #fff;">
+            AllayRPG is a Hungarian, cracked minecraft server. At first, they thought about creating an MMORPG world, but in the end they decided that they wanted to give players not only this game mode, but many others as well. In Hungary, other servers have not really managed to solve many things in terms of appearance and game modes, but AllayRPG strives to adopt a beautiful and modern style. It was not created to make money, but to create a good gaming experience and a friendly community. If I have piqued your interest, join us, because we are happy to welcome all enthusiastic players!            <br><br> <span style="color: aqua;"> play.allayrpg.hu : </span>  1.18.2x
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+              Aryan Programmer and Farkaaas ownes the copyright of this website.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#hireme">AllayRPG</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Services</h3>
+            <ul>
+              <li>
+                <a href="#portfolio">All</a>
+              </li>
+              <li>
+                <a href="#portfolio">Models</a>
+              </li>
+              <li>
+                <a href="#portfolio">Builds</a>
+              </li>
+              <li>
+                <a href="#portfolio">Texture Pack</a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Message Me</h3>
+            <p class="text">
+              Contact me via Email Or via Discord
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Type and Copy the msg" />
+              <a href="mailto:allayrpg@gmail.com" type="submit" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text" >
+              Copyright&copy;2023 All rights reserved | <br> Made With 💖 For Farkaaas by
+              <span class="split-text" data-text="FORUM" ><a
+               href="https://aryancoder007.github.io/portfolio" style="color: red;" >  Aryan Programmer </a></span>
+             
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            
+
+            <div class="back-btn-wrap">
+              <a href="#header" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
